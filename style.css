@@ -1,0 +1,41 @@
+body{
+    background: #322;
+    /* border: yellow double; */
+}
+.clock{
+    font-size: 5rem;
+    text-align: center;
+    margin: 200px auto;
+    color: blue;
+    font-family: arial;
+    /* border: yellow dotted; */
+}
+.clock span{
+    padding: 20px;
+    background: #433;
+    /* border: yellow dashed; */
+}
+.date{
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: "";
+}
+@media only screen and (max-width:767px){
+    body{
+        border: none;
+    }
+    .clock{
+        /* text-align: center; */
+        margin: auto;
+        height: auto;
+        width: auto;
+        padding: 110px;
+        justify-content: space-around;
+        border: none;
+    }
+    .date{
+        margin-right: 100px;
+        padding: 20px;
+        color: darkslateblue;
+    }
+}
