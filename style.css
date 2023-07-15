@@ -64,6 +64,7 @@ input{
     font-weight: bold;
     border-radius: 5px;
     border: 1px solid var(--Grey);
+    cursor: pointer;
 }
 input::placeholder{
     color: var(--Grey);
