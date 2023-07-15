@@ -1,0 +1,27 @@
+ <!-- Sign-up form start -->
+
+
+
+  
+
+  
+  
+
+
+  
+ 
+
+  
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+  
+
+ 
+
+  
+
+  <!-- Success message end -->
+  
