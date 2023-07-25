@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar start -->
+  <div class="large">
+
+  
+  <div class="sidebar">
+    <div class="sidebar-btns">
+
+      <div class="btn-l">
+        <div class="sidebar-btn" data-page="1">
+          <button class="first-btn">1</button>
+        </div>
+        <div class="btn-info">
+          <p>STEP 1</p>
+          <p>YOUR INFO</p>
+        </div>
+      </div>
+ 
+      <div class="btn-l">
+      <div class="sidebar-btn" data-page="2">
+        <button class="">2</button>
+      </div>
+      <div class="btn-info">
+        <p>STEP 2</p>
+        <p>SELECT PLAN</p>
+      </div>
+    </div>
+
+    <div class="btn-l">
+      <div class="sidebar-btn" data-page="3">
+        <button class="">3</button>
+      </div>
+      <div class="btn-info">
+        <p>STEP 3</p>
+        <p>ADD-ONS</p>
+      </div>
+    </div>
+
+      <div class="btn-l">
+      <div class="sidebar-btn" data-page="4">
+        <button class="">4</button>
+      </div>
+      <div class="btn-info">
+        <p>STEP 4</p>
+        <p>SUMMARY</p>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+    <div class="page">
+
+     
+        <div class="first-page" data-page="1">
+          <div class="info">
+            <h1>Personal info</h1>
+            <p> Please provide your name, email address, and phone number.</p>
+          </div>
+          <div class="inputs">
+  
+            <div class="input">
+              <div class="labels">
+                <label>Name</label>
+                <label class="err-label">This field is required</label>
+              </div>
+              
+              <input class="info-input" type="text" placeholder="e.g. Stephen King">
+            </div>
+  
+            <div class="input">
+              <div class="labels">
+                <label>Email Address</label>
+                <label class="err-label">This field is required</label>
+              </div>
+             
+              <input class="info-input" type="email" placeholder="e.g. stephenking@lorem.com">
+            </div>
+  
+            <div class="input">
+  
+              <div class="labels">
+                <label>Phone Number</label>
+                <label class="err-label">This field is required</label>
+              </div>
+  
+              <input class="info-input" type="text" placeholder="e.g. +1 234 567 890">
+            </div>
+          </div>
+          
+          <div class="ctrl-btns">
+            <div class=""></div>
+            <div class="next-btn">
+              <button class="sidebar-btn next" data-page="2" class="next">Next Step</button>
+            </div>
+          </div>
+        </div>
+      
+
+
+        <div class="second-page" data-page="2">
+          <div class="info">
+            <h1>Select your plan</h1>
+            <p>You have the option of monthly or yearly billing.</p>
+          </div>
+          <div class="plans">
+            <div class="sel-plans">
+              <button class="arcade" data-plan="Arcade">
+                <img src="./assets/images/icon-arcade.svg">
+                <div class="txt">
+                  <h1>Arcade</h1>
+                  <p class="month-price">$<span class="price" data-originalPrice="9">9</span><span class="duration">/mo</span></p>
+                  <div class="year-price">
+                    <p>2 months free</p>
+                  </div>
+                </div>
+              </button>
+    
+              <button class="advanced" data-plan="Advanced">
+                <img src="./assets/images/icon-advanced.svg">
+                <div class="txt">
+                  <h1>Advanced</h1>
+                  <p class="month-price">$<span class="price" data-originalPrice="12">12</span><span class="duration">/mo</span></p>
+                  <div class="year-price">
+                    <p>2 months free</p>
+                  </div>
+                </div>
+              </button>
+    
+              <button class="pro" data-plan="Pro">
+                <img src="./assets/images/icon-pro.svg">
+                <div class="txt">
+                  <h1>Pro</h1>
+                  <p class="month-price">$<span class="price" data-originalPrice="15">15</span><span class="duration">/mo</span></p>
+                  <div class="year-price">
+                    <p>2 months free</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+
+            
+            <div class="switch">
+              <p class="monthly">Monthly</p>
+              <div class="slider">
+                <div class="slide-btn"></div>
+              </div>
+              <p class="yearly">Yearly</p>
+            </div>
+          </div>
+          <div class="ctrl-btns">
+            <div class="prev-btn">
+              <button class="sidebar-btn prev" data-page="1" class="next">Go back</button>
+            </div>
+            <div class="next-btn">
+              <button class="sidebar-btn next" data-page="3" class="next">Next Step</button>
+            </div>
+          </div>
+        </div>
+
+ 
+
+      
+      <div class="third-page" data-page="3">
+        <div class="info">
+          <h1>Pick add-ons</h1>
+          <p>Add-ons help enhance your gaming experience.</p>
+        </div>
+
+        <div class="adds">
+          <div class="check">
+            <div class="check-1">
+                <input class="checkbox" type="checkbox">
+            <div class="check-info">
+              <p class="add-on-name">Online service</p>
+              <p>Access to multiplayer games</p>
+            </div>
+
+            </div>
+              <div class="add-price">
+                <p class="month-price">+$<span id="add-on-price" class="price" data-originalPrice="1">1</span><span class="duration">/mo</span></p>
+              <!-- <p>+$1/mo</p> -->
+            </div>
+          </div>
+          <div class="check">
+            <div class="check-1">
+                <input class="checkbox" type="checkbox">
+            <div class="check-info">
+              <p class="add-on-name">Larger Storage</p>
+              <p>Extra 1TB of cloud save</p>
+            </div>
+
+            </div>
+                <div class="add-price">
+                  <p class="month-price">+$<span id="add-on-price" class="price" data-originalPrice="2">2</span><span class="duration">/mo</span></p>
+            </div>
+          </div>
+          <div class="check">
+            <div class="check-1">
+                <input class="checkbox" type="checkbox">
+            <div class="check-info">
+              <p class="add-on-name">Customizable profile</p>
+              <p>Custom theme on your profile</p>
+            </div>
+
+            </div>
+               <div class="add-price">
+                <p class="month-price">+$<span id="add-on-price" class="price" data-originalPrice="2">2</span><span class="duration">/mo</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="ctrl-btns">
+          <div class="prev-btn">
+            <button class="sidebar-btn prev" data-page="2" class="next">Go back</button>
+          </div>
+          <div class="next-btn">
+            <button class="sidebar-btn next" data-page="4" class="next">Next Step</button>
+          </div>
+        </div>
+      </div>
+  
+
+      
+      <div class="fourth-page">
+          <div class="info">
+            <p>Finishing up</p>
+            <p>Double-check everything looks OK before confirming</p>
+          </div>
+          <div class="price-list">
+            <div class="orders">
+              <div class="order1">
+                <div class="selected-plans">
+                  <p ><span class="selected-plan">Arcade</span> <span class="plan-duration"> (Monthly)</span></p>
+                  <p class="change-plan">change</p>
+                </div>
+                <div class="price2">
+                  <p class="month-price">$<span  id="price-of-plan"  class="price" data-originalPrice="9">9</span><span class="duration">/mo</span></p>
+                </div>
+              </div>
+              <div class="lower-order">
+                <!-- <div class="order2">
+                  <p></p>
+                  <p class="month-price"><span class="price" data-originalPrice="9"></span></p>
+                </div>
+                <span class="duration"></span>
+                <div class="order2">
+                  <p>Online service</p>
+                  <p class="month-price">+$<span class="price" data-originalPrice="9">1</span><span class="duration">/mo</span></p>
+                </div>
+                <div class="order2">
+                  <p>Online service</p>
+                  <p class="month-price">+$<span class="price" data-originalPrice="9">1</span><span class="duration">/mo</span></p>
+                </div>
+              </div> -->
+
+            </div>
+
+          </div>
+          <div class="output">
+            <p class="output-data">Total <span class="total-duration">(per month)</span></p>
+            <p class="output-price">+$<span class="price">9</span><span class="total-output-duration">/mo</span></p>
+          </div>
+      </div>
+      <div class="ctrl-btns">
+        <div class="prev-btn">
+          <button class="sidebar-btn prev" data-page="3" class="next">Go back</button>
+        </div>
+        <div class="next-btn">
+          <button class="sidebar-btn conf" data-page="5" class="next">Confirm</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="thank">
+      <div class="i">
+        <img class="img4" src="./assets/images/icon-thank-you.svg" alt="">
+      </div>
+      
+      <h1>Thank You!</h1>
+      <p>Thanks for confirming your subscription! We hope you have fun 
+        using our platform. If you ever need support, please feel free 
+        to email us at support@loremgaming.com.</p>
+    </div>
+
+
+  </div>
+</div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
