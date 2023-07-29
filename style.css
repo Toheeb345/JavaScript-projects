@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Very_light_grayish_blue: hsl(210, 60%, 98%);
+    --Light_grayish_blue1: hsl(211, 68%, 94%);
+    --Light_grayish_blue_2: hsl(205, 33%, 90%);
+    --Grayish_blue: hsl(219, 14%, 63%);
+    --Dark_grayish_blue: hsl(219, 12%, 42%);
+    --Very_dark_blue: hsl(224, 21%, 14%);
+}
+body{
+    background: var(--Very_light_grayish_blue);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.container{
+    margin: 40px auto;
+    max-width: 700px;
+    background-color: var(--White);
+    padding: 20px;
+    border-radius: 5px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3%;
+}
+.top h4{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: bold;
+}
+.top button{
+    padding:  4px 8px;
+    background-color: var(--Blue);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.note{
+    display: flex;
+    gap: 15px;
+    background-color: var(--Very_light_grayish_blue);
+    padding: 10px;
+    border-radius: 2px;
+    align-items: center;
+    color: var(--Dark_grayish_blue);
+    width: 100%;
+}
+.mark{
+   color: var(--Dark_grayish_blue);
+   cursor: pointer; 
+   font-weight: 500;
+}
+.mark:hover{
+    color: var(--Blue);
+}
+.timing{
+    color: var(--Grayish_blue);
+}
+.name{
+    font-weight: bolder;
+    color: var(--Very_dark_blue);
+    cursor: pointer;
+}
+.name:hover{
+    color: var(--Blue);
+}
+.post{
+    color: var(--Very_dark_blue);
+    font-weight: 500;
+    cursor: pointer;
+}
+.post:hover{
+    color: var(--Blue);
+}
+.group{
+    color: var(--Blue);
+    font-weight: bold;
+    cursor: pointer;
+}
+#private{
+    align-items: flex-start;
+}
+.private{
+    margin-top: 8px;
+    padding: 10px;
+    border: 1px solid var(--Light_grayish_blue_2);
+    cursor: pointer;
+}
+.private:hover{
+    background-color: var(--Light_grayish_blue_2);
+}
+.active{
+    background-color: var(--Red);
+    border: none;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    margin-left: 2px;
+}
+.note img{
+    width: 40px;
+    object-fit: cover;
+}
+.notifications{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.img{
+    text-align: right;
+}
